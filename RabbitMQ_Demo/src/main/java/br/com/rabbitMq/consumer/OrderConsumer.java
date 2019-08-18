@@ -26,7 +26,10 @@ public class OrderConsumer {
 	 * @param pFileBody
 	 */
 	@RabbitListener(queues = {"$queue.order.name"})
-	public void receive(@Payload String pFileBody) {
+	public void receive(
+		@Payload 
+		String pFileBody
+	) {
 		log.info(pFileBody);
 	}
 	
