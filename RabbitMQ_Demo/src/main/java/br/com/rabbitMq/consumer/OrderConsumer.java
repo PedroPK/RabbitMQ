@@ -8,13 +8,11 @@ import lombok.extern.slf4j.Slf4j;
 
 /*
  * Once tue Consumer has to be mapped into Spring container,
- * it has to receive the Component annotation
+ * it has to receive the @Component annotation
+ *
+ * The @Slf4f is a Lombok annotation, allowing us to Log with less effort 
  */
 @Component
-
-/*
- * Lombok annotation, allowing us to Log with less effort 
- */
 @Slf4j
 public class OrderConsumer {
 	
