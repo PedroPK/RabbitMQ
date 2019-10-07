@@ -1,4 +1,4 @@
-package br.com.rabbitMq.consumer;
+package br.com.rmq.consumer;
 
 import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.boot.SpringApplication;
@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @EnableRabbit
 public class ConsumerAppConfig {
 	
-	public static void maind(String[] args) {
+	public static void main(String[] args) {
 		SpringApplication.run(ConsumerAppConfig.class, args);
 	}
 	
